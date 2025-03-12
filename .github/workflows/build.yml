@@ -28,6 +28,9 @@ jobs:
       - name: Typecheck
         run: npm run typecheck
 
+      - name: Test
+        run: npm run test:once
+
       - name: Build
         run: npm run build
 
@@ -36,6 +39,3 @@ jobs:
         with:
           name: build
           path: dist/*
-
-
-  
